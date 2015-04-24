@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <script>
+    var require = require('remote').require
+    var runwin = require('browser-window')
+    var path = require('path')
+
+    win = new runwin({width:800, height: 600})
+    win.loadUrl('file://' + path.join(__dirname, 'test.html'))
+  </script>
+</html>
